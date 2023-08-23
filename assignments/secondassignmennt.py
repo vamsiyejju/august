@@ -1,5 +1,6 @@
 #membership checking
 #ex-1
+
 name="my name is yejju"
 input_name=input()
 
@@ -48,11 +49,7 @@ text = "     mango    "
 x = text.strip()
 print("out of all fruits", x, "is my favorite")
 
-#example:3
 
-text_word = ",,,,,ggggoooo.....cakes....pastryyy"
-x = text_word.strip(",.ggoo")
-print(x)
 
 
 
