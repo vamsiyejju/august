@@ -1,6 +1,6 @@
-#membership checking
+#membership check
 #ex-1
-
+print('#Membership operator using in and not in,#enter name')
 name="my name is yejju"
 input_name=input()
 
@@ -11,7 +11,7 @@ else:
 
 print()
 #ex-2
-
+print("#enter the name")
 word="my name is yejju"
 input_word=input()
 
@@ -22,7 +22,7 @@ print(result)
 
 #ex-3
 
-
+print("#enter the name of an actor")
 names=["jr ntr","mohan lal","rajanikanth","shiva raj kumar"]
 input_name=input()
 
@@ -38,6 +38,7 @@ for input_name in names:
 
 #example:1
 
+print(' #strip')
 name="     jr ntr is my favourite Hero  "
 name1=name.strip()
 length=len(name1)
@@ -57,7 +58,7 @@ print("out of all fruits", x, "is my favorite")
 #comparing two strings
 
 #example:1
-
+print("#string comparision # entrer the vegetable name ")
 vegetable=input()
 
 if vegetable=="tomoato":
@@ -87,6 +88,7 @@ else:
 
 
 #rindex method
+print("#finding a sub string by suing rindex method","#enter the name of a player")
 player_names = "Sachin Tendulkar, Virat Kohli, Rohit Sharma, MS Dhoni, Sachin Tendulkar"
 
 
@@ -98,7 +100,7 @@ rohit_index = player_names.rindex("Rohit Sharma")
 print("Last 'Rohit Sharma' index:", rohit_index)
 
 #indexmethod
-
+print("#finding a sub string by using index method","#enter name ")
 player_names = "Sachin Tendulkar, Virat Kohli, Rohit Sharma, MS Dhoni, Sachin Tendulkar"
 
 
@@ -110,17 +112,19 @@ rohit_index = player_names.index("Rohit Sharma")
 print("'Rohit Sharma' index:", rohit_index)
 
 #find method
+print("#find method")
 vegetables= "tomato is very costly vegetable"
 x = vegetables.find("vegetable")
 print(x)
 
 # rfind method
-
+print("#rfind method")
 vegetables= "tomato is very costly vegetable"
 x = vegetables.rfind("vegetable",15,24)
 print(x)
 
 #replacing the string
+print("replacing the string method")
 
 original_string = "I love mangoes. Mangoes are delicious fruits."
 
@@ -132,12 +136,13 @@ print("New string:", new_string)
 
 #split method
 
-
+print("#split method ")
 flower_string = "Rose Lily Tulip Daisy Sunflower"
 flower_list = flower_string.split()
 print("List of flowers:", flower_list)
 
 #join operator
+print("#joinoperator")
 laptop_names = ['Dell', 'HP', 'Lenovo', 'Asus', 'Apple']
 
 
