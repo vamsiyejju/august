@@ -1,13 +1,13 @@
 #Question-1
 print(" python program to merge two lists")
-list1 = eval(input("Enter the first list seperated by commas: "))
-list2 = eval(input("Enter the second list seperated by commas: "))
+list1 = eval(input("Enter the first list : "))
+list2 = eval(input("Enter the second list : "))
 list3 = list1 + list2
 print("Merged List:", list3)
 
 #Question-2
 print(" python program to find the sum of list elements")
-l1=list(eval(input('enter a group of elements separated by commas: ')))
+l1=list(eval(input('enter elements : ')))
 sum=0
 for i in l1:
     sum+=i
@@ -15,7 +15,7 @@ print(f'sum of elements in list: {sum}')
 
 #Question-3
 print(" python program to print even and odd numbers seperatly in list")
-l=list(eval(input('enter a group of elements separated by commas: ')))
+l=list(eval(input('enter elements: ')))
 even=[]
 odd=[]
 for i in l:
@@ -29,7 +29,7 @@ print(f'even numbers: {even}')
 
 #Question-4
 print(" python program to delete element of given index in list.")
-l=list(eval(input('enter a group of elements separated by comma: ')))
+l=list(eval(input('enter elements: ')))
 index=int(input('enter a index position: '))
 l.pop(index)
 print(f'list after removing element in given index position: {l}')
@@ -53,8 +53,8 @@ print(f'list after inserting elements at a given index position: {l}')
 
 #Question-7
 print("python program to check the sizes of given two lists are same")
-v1=list(eval(input('enter a group of elements separata by comma: ')))
-v2=list(eval(input('enter a group of elements separated by comma: ')))
+v1=list(eval(input('enter a group of elements : ')))
+v2=list(eval(input('enter a group of elements : ')))
 if (len(v1) == len(v2)):
     print('size of both the lists are same')
 else:
@@ -84,7 +84,7 @@ print(f'new list after removing specified elements: {l1}')
 
 #Question-9
 print("a Python program to convert a list of multiple integers into a single integer")
-l=list(eval(input('enter a group of elements separated by comma ')))
+l=list(eval(input('enter a group of elemets: ')))
 l1=''
 for i in l:
     l1+=str(i)
@@ -92,7 +92,7 @@ print(f'string which formed after adding integers: {l1}')
 
 #Question-10
 print("a Python program to remove duplicates from a list")
-l1=list(eval(input('enter a group of elements separated by comma: ')))
+l1=list(eval(input('enter a group of elements : ')))
 l=list(set(l1))
 print(f'list after removing duplicates: {l}')
 
