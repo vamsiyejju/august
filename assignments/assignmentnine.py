@@ -73,9 +73,7 @@ while True:
         
         
 #question -2 
-#calculator using oops 
-
-# calculator by oops concept 
+#calculator task
 
 class calculator:
     def __init__(self):
