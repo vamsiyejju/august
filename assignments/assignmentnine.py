@@ -75,42 +75,50 @@ while True:
 #question -2 
 #calculator task
 
-class calculator:
-    def __init__(self):
-        self.number1=int(input("enter a number : "))
-        self.number2=int(input("enter a number : "))
-    def add(self):
-        print("The addition of ",self.number1,"and",self.number2,"is : ",self.number1+self.number2)
-    def substraction(self):
-        print("The substraction of ",self.number1,"and",self.number2,"is : ",self.number1-self.number2)
-    def multiplication(self):
-        print("The multiplication of ",self.number1,"and",self.number2,"is : ",self.number1*self.number2)
-    def division(self):
-        print("The division of ",self.number1,"and",self.number2,"is : ",self.number1/self.number2)
+class calculator():
 
-while True:
+   def __init__(self,input_01,input_02):
+      self.a=input_01
+      self.b=input_02
 
-    user=input("enter  function you want : ")
-    cal=calculator()
-    if user=="add":
-        cal.add()
-    elif user=="substraction":
-        cal.substraction()
-    elif user=="multiply":
-        cal.multiplication()
-    elif user=="division":
-        cal.division()
-    else:
-        print(user,"function not existed in class")
-    print()
-    next_function=input("enter yes or no for further step : ")
-    if next_function=="yes":
-        continue
-    elif next_function=="no":
-        break
-    else:
-        print("invalid input")
- 
+   def add(self):
+      return self.a+self.b
+   def multiply(self):
+      return self.a*self.b
+   def divide(self):
+      return self.a/self.b
+   def subtract(self):
+      return self.a-self.b
+   
+input_1 = int(input("Enter the first number: "))
+input_2 = int(input("Enter the second number: "))
+print("The entered first and second numbers are : ")
+print(input_1, input_2)
+
+my_instance = calculator(input_1,input_2)
+choice=1
+
+while choice!=0:
+   print("0. Exit")
+   print("1. Addition")
+   print("2. Subtraction")
+   print("3. Multiplication")
+   print("4. Division")
+   choice=int(input("Enter your choice... "))
+
+   if choice==1:
+      print("The computed addition result is : ",my_instance.add())
+   elif choice==2:
+      print("The computed subtraction result is : ",my_instance.subtract())
+   elif choice==3:
+      print("The computed product result is : ",my_instance.multiply())
+   elif choice==4:
+      print("The computed division result is : ",round(my_instance.divide(),2))
+   elif choice==0:
+      print("Exit")
+   else:
+      print("Sorry, invalid choice!")
+print()
 
 #QUESTION - 3
 #Reverse the input names in different ways
