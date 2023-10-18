@@ -34,7 +34,7 @@ e = Employee()
 e.method2()
 
 #QUESTION - 3 :
-# Multiple Inheritance:
+# Multilevel Inheritance:
 class grandfather:
     def land(self):
         print("150 acres land")
@@ -52,7 +52,7 @@ s = son()
 s.car()
 
 #QUESTION - 4 :
-# Hirechal Inheritance :
+#Hierarchical Inheritance :
 class company:
     def companyname(self):
         print("infosys")
