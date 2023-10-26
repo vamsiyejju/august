@@ -11,7 +11,7 @@ class Hospital:
             "Name"      : Patient_Name,
             "Age"       : Patient_Age,
             "Gender"    : Patient_Gender,
-            "Diagnosis" : Patient_Healthissue
+            "Healthissue" : Patient_Healthissue
         }
 
         self.patients.append(patient)
